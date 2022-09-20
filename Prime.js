@@ -1,13 +1,13 @@
-function primeCheck(num){
+function primeCheck(n){
     let count=0;
-    for (let i=1;i<=num;i++){
-        if(num%i==1){
+    for (let i=1;i<=n;i++){
+        if(num%i==0){
             count++;
         }else{
           continue;
         } 
     }
-  if(count==1){
+  if(count==2){
     return true;
   }else{
     return false;
