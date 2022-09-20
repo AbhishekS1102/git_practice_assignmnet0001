@@ -1,13 +1,13 @@
 function primeCheck(num){
-    let count=0;
+    let factor=0;
     for (let i=1;i<=num;i++){
-        if(num%i==1){
-            count++;
+        if(num%i==0){
+            factor++;
         }else{
           continue;
         } 
     }
-  if(count==1){
+  if(factor==2){
     return true;
   }else{
     return false;
